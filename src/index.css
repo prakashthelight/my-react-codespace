@@ -1,13 +1,67 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Resets */
+/* Box Sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 400;
+}
+
+a,
+a:active,
+a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Secular+One&display=swap");
+
+:root {
+    --clr-blue: #0072ff;
+    --clr-white: #fff;
+
+    /*  font-sizes */
+    --fs-900: 9.375rem;
+    --fs-800: 6.25rem;
+    --fs-700: 3.5rem;
+    --fs-600: 2rem;
+    --fs-500: 1.75rem;
+    --fs-400: 1.125rem;
+    --fs-300: 1rem;
+    --fs-200: 0.875rem;
+
+    /* font-faimilies */
+    --ff-secular: "Secular One", sans-serif;
+    --ff-sans-cond: "Barlow Condensed", sans-serif;
+    --ff-sans-normal: "Barlow Condensed", sans-serif;
+}
+
+body {
+    font-family: var(--ff-sans-normal);
+    font-size: var(--fs-400);
+    line-height: 1.5;
+    min-height: 100vh;
 }
