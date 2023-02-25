@@ -1,31 +1,58 @@
-.App {
-  text-align: center;
+.app-container {
+    padding-inline: 2rem;
+    margin-inline: auto;
+    max-width: 80rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    margin-bottom: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.logo {
+    font-family: var(--ff-secular);
+    font-size: var(--fs-700);
+    line-height: 1;
 }
 
-.App-link {
-  color: #61dafb;
+.logo>span {
+    display: inline-block;
+    width: 12px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: var(--clr-blue);
 }
 
-.heart {
-  color: #ff0000;
+.contact {
+    display: flex;
+    gap: 2rem;
 }
 
-.small {
-  font-size: 0.75rem;
+.contact img {
+    height: 36px;
+    aspect-ratio: 1;
+}
+
+.section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.section .heading {
+    font-family: var(--ff-secular);
+    font-size: var(--fs-800);    
+}
+
+.section button {
+    padding: 10px 40px;
+    border: none;
+    appearance: none;
+    font-size: var(--fs-300);
+    background-color: var(--clr-blue);
+    color: var(--clr-white);
+    border: none;
+    border-radius: 30px    
 }
